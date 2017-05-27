@@ -1,0 +1,20 @@
+import java.util.*;
+public class ejemplo_14 {
+	
+	
+
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			int num;
+			try{
+			System.out.println("introduzca su numero entero ");
+			num = sc.nextInt();
+			System.out.println("su numero entero es: "+num);
+			}catch(InputMismatchException no_num){
+				System.out.println("introdujo un valor no numerico o no entero ");
+			}finally{
+				System.out.println("finalizacion completada :)");
+			}
+		}
+
+	}
