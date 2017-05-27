@@ -1,0 +1,18 @@
+import java.util.*;
+public class ejemplo_5 {
+	
+	
+
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			try{
+			char fruta;
+			System.out.println("ingrese una fruta");
+			fruta = sc.next().charAt(1);
+			System.out.println("introdujo la fruta: "+fruta);
+			}catch(StringIndexOutOfBoundsException no){
+				System.out.println("no se escaneo correctamente una cadena");
+			}
+			
+		}
+	}
