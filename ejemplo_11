@@ -1,0 +1,27 @@
+import java.util.*;
+public class ejemplo_11 {
+	
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+			double num1,num2,resta;
+			
+			try{
+				System.out.println("ingrese un numero");
+				num1 = sc.nextInt();
+				System.out.println("ingrese otro numero");
+				num2 = sc.nextInt();
+				resta=num1-num2;
+				System.out.println("el producto de los numeros es: "+resta);
+				
+			}catch(InputMismatchException no_num){
+				System.out.println("usted introdujo un valor no numerico");
+				System.out.println("la restan no se a realizado ");
+			}finally{
+				System.out.println("finalizacion completada :)");
+			}
+		
+
+		}
+
+	}
+}
